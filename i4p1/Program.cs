@@ -10,6 +10,9 @@ namespace i4p1
     {
         public static string Feladat1a(string uzenet, string kulcs)
         {
+            char[] uzenetkarakterek = uzenet.ToCharArray();
+
+            char[] kulcskarakterek = kulcs.ToCharArray();
 
             return "0";
         }
