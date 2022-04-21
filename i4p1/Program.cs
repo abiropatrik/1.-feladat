@@ -29,7 +29,14 @@ namespace i4p1
                 {
                     uzenetkod[i] = uzenetkarakterek[i] - a;
                 }
-
+                if (kulcskarakterek[i].Equals(' '))
+                {
+                    kulcskod[i] = 26;
+                }
+                else
+                {
+                    kulcskod[i] = kulcskarakterek[i] - a;
+                }
             }
             return "0";
         }
