@@ -52,10 +52,12 @@ namespace i4p1
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Adja meg az üzenetet: ");
+            Console.Write("Adja meg az üzenetet: ");
             string uzenet = Console.ReadLine();
-            Console.WriteLine("Adja meg a kulcsot: ");
+            Console.Write("Adja meg a kulcsot: ");
             string kulcs = Console.ReadLine();
+
+            Console.WriteLine(Feladat1a(uzenet, kulcs));
 
             Console.ReadKey();
         }
