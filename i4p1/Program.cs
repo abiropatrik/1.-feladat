@@ -19,6 +19,9 @@ namespace i4p1
 
             char a = 'a';
 
+            int[] megoldaskod = new int[uzenet.Length];
+            char[] megoldaskarakterek = new char[uzenet.Length];
+
             for (int i = 0; i < uzenetkarakterek.Length; i++)
             {
                 if (uzenetkarakterek[i].Equals(' '))
