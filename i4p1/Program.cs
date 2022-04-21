@@ -54,8 +54,8 @@ namespace i4p1
         public static string Feladat1b(string kod, string kulcs)
         {
 
-            char[] uzenetkarakterek = uzenet.ToCharArray();
-            int[] uzenetkod = new int[uzenetkarakterek.Length];
+            char[] kodkarakterek = kod.ToCharArray();
+            int[] kodkod = new int[kodkarakterek.Length];
 
 
             char[] kulcskarakterek = kulcs.ToCharArray();
@@ -63,18 +63,18 @@ namespace i4p1
 
             char a = 'a';
 
-            int[] megoldaskod = new int[uzenet.Length];
-            char[] megoldaskarakterek = new char[uzenet.Length];
+            int[] megoldaskod = new int[kod.Length];
+            char[] megoldaskarakterek = new char[kod.Length];
 
-            for (int i = 0; i < uzenetkarakterek.Length; i++)
+            for (int i = 0; i < kodkarakterek.Length; i++)
             {
-                if (uzenetkarakterek[i].Equals(' '))
+                if (kodkarakterek[i].Equals(' '))
                 {
-                    uzenetkod[i] = 26;
+                    kodkod[i] = 26;
                 }
                 else
                 {
-                    uzenetkod[i] = uzenetkarakterek[i] - a;
+                    kodkod[i] = kodkarakterek[i] - a;
                 }
                 if (kulcskarakterek[i].Equals(' '))
                 {
@@ -84,10 +84,10 @@ namespace i4p1
                 {
                     kulcskod[i] = kulcskarakterek[i] - a;
                 }
-                megoldaskod[i] = kulcskod[i] + uzenetkod[i];
-                if (kulcskod[i] + uzenetkod[i] > 26)
+                megoldaskod[i] = kulcskod[i] + kodkod[i];
+                if (kulcskod[i] + kodkod[i] > 26)
                 {
-                    megoldaskod[i] = (kulcskod[i] + uzenetkod[i]) % 27;
+                    megoldaskod[i] = (kulcskod[i] + kodkod[i]) % 27;
                 }
                 megoldaskarakterek[i] = Convert.ToChar(megoldaskod[i] + a);
             }
