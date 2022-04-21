@@ -8,8 +8,19 @@ namespace i4p1
 {
     class Program
     {
+        public static string Feladat1a(string uzenet, string kulcs)
+        {
+
+            return "0";
+        }
         static void Main(string[] args)
         {
+            Console.WriteLine("Adja meg az üzenetet: ");
+            string uzenet = Console.ReadLine();
+            Console.WriteLine("Adja meg a kulcsot: ");
+            string kulcs = Console.ReadLine();
+
+            Console.ReadKey();
         }
     }
 }
