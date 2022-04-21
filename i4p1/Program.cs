@@ -21,7 +21,15 @@ namespace i4p1
 
             for (int i = 0; i < uzenetkarakterek.Length; i++)
             {
-                uzenetkod[i] = uzenetkarakterek[i] - a;
+                if (uzenetkarakterek[i].Equals(' '))
+                {
+                    uzenetkod[i] = 26;
+                }
+                else
+                {
+                    uzenetkod[i] = uzenetkarakterek[i] - a;
+                }
+
             }
             return "0";
         }
