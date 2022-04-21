@@ -87,7 +87,7 @@ namespace i4p1
                 megoldaskod[i] = kodkod[i]-kulcskod[i];
                 if (kodkod[i]-kulcskod[i]<0)
                 {
-                    megoldaskod[i] = (kulcskod[i] + kodkod[i]) % 27;
+                    megoldaskod[i] = (kodkod[i]-kulcskod[i])*-26 % 27;
                 }
                 megoldaskarakterek[i] = Convert.ToChar(megoldaskod[i] + a);
             }
