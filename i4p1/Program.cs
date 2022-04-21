@@ -84,8 +84,8 @@ namespace i4p1
                 {
                     kulcskod[i] = kulcskarakterek[i] - a;
                 }
-                megoldaskod[i] = kulcskod[i] + kodkod[i];
-                if (kulcskod[i] + kodkod[i] > 26)
+                megoldaskod[i] = kodkod[i]-kulcskod[i];
+                if (kodkod[i]-kulcskod[i]<0)
                 {
                     megoldaskod[i] = (kulcskod[i] + kodkod[i]) % 27;
                 }
