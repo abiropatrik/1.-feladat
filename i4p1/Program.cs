@@ -47,7 +47,8 @@ namespace i4p1
                 }
                 megoldaskarakterek[i] = Convert.ToChar(megoldaskod[i] + a);
             }
-            return "0";
+            string megoldas = new string(megoldaskarakterek);
+            return megoldas;
         }
         static void Main(string[] args)
         {
