@@ -40,6 +40,7 @@ namespace i4p1
                 {
                     kulcskod[i] = kulcskarakterek[i] - a;
                 }
+                megoldaskod[i] = kulcskod[i] + uzenetkod[i];
             }
             return "0";
         }
