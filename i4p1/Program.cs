@@ -45,6 +45,7 @@ namespace i4p1
                 {
                     megoldaskod[i] = (kulcskod[i] + uzenetkod[i]) % 27;
                 }
+                megoldaskarakterek[i] = Convert.ToChar(megoldaskod[i] + a);
             }
             return "0";
         }
